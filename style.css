@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    position: relative;
+}
+.header-overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+}
+.logo-nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+}
+.logo{
+    background-image: url('../images/logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 30px; 
+}
+.header-list{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    padding-bottom: 5px;
+    font-family: 'Alata', sans-serif;
+    position: relative;
+}
+.header-list li{
+    list-style: none;
+    position: relative;
+}
+.header-list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.header-list li:before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 35px;
+    height: 3px;
+    bottom: -10px;  
+    left: 6px;
+    border-radius: 5px;
+    opacity: 0;
+}
+.header-list li:hover:before{
+    opacity: 1;
+    transition: .2s;
+}
+#check{
+    display: none;
+}
+.menu-btn{
+    display: none;
+}
+header .big-text{
+    border: 2px solid #fff;
+    width: 550px;
+    height: 230px;
+    margin-top: 100px;
+    margin-left: 30px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+header .big-text h1{
+    color: #fff;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+}
+.first-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-section .image-text{
+    border: 1px solid red;
+    width: 70%;
+    height: 400px;
+    display: flex;
+}
+.image-text .img1{
+    background-image: url('../images/desktop/image-interactive.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 900px;
+}
+.image-text .text{
+    border: 1px solid blue;
+    width:  800px;
+    height: 260px;
+    position: relative;
+    top: 35%;
+    right: 5%;
+    background-color: #fff;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+ .h2-text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    margin-left: 15px;
+}
+.text .para1{
+    color: hsl(0, 0%, 55%);
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    padding-top: 20px;
+    margin-left: 18px;
+    /* text-align: end; */
+}
+.flex-section{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 60px auto;
+    padding: 10px;
+    
+}
+.flex-section button{
+    border: 1px solid  hsl(0, 0%, 55%);
+    outline: none;
+    width: 130px;
+    padding: 10px;
+    background-color: #fff;
+    font-family: 'Alata', sans-serif;
+    border-radius: 3px;
+}
+.flex-section button:hover{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 70%;
+    margin: 10px auto;
+}
+.grid-section .grid-image{
+    width: 100%;
+    height: 400px;
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 30px;
+}
+.grid-section .img2{
+    background-image: url('../images/desktop/image-deep-earth.jpg')
+}
+.grid-section .img3{
+    background-image: url('../images/desktop/image-night-arcade.jpg')
+}
+.grid-section .img4{
+    background-image: url('../images/desktop/image-soccer-team.jpg')
+}
+.grid-section .img5{
+    background-image: url('../images/desktop/image-grid.jpg')
+}
+.grid-section .img6{
+    background-image: url('../images/desktop/image-from-above.jpg')
+}
+.grid-section .img7{
+    background-image: url('../images/desktop/image-pocket-borealis.jpg')
+}
+.grid-section .img8{
+    background-image: url('../images/desktop/image-curiosity.jpg')
+}
+.grid-section .img9{
+    background-image: url('../images/desktop/image-fisheye.jpg')
+}
+.h3-text{
+    border: 1px solid red;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-align: bottom;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; */
+}
+footer{
+    background-color: #000;
+    /* height: 130px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-child{
+    border: 1px solid red;
+}
+.first-child{
+    width: 300px;
+}
+.logo2{
+    padding-bottom: 60px;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Alata', sans-serif;
+}
+.footer-list .a-text{
+    font-size: 13px;
+}
+
+.footer-para{
+    color:  hsl(0, 0%, 41%);
+    font-family: 'Alata', sans-serif;
+    font-size: 13px;
+}
+.flex-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    position: relative;
+}
+.icons{
+margin-right: 20px;
+}
+.icons:before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 15px;
+    height: 2px;
+    bottom: -5px;  
+    left: 3px;
+    border-radius: 5px;
+    /* opacity: 0; */
+}
+
+
+
+
+
+
+@media(max-width: 1020px){
+    .grid-section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 870px){
+    .grid-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 850px){
+    header{
+        padding: 10px;
+    }
+}
+@media(max-width: 770px){
+    .header-list{
+        width: 350px;
+    }
+    .logo{
+        width: 130px;
+}
+    header{
+        padding: 0px;
+    }
+}
+@media(max-width: 600px){
+    .grid-section{
+        grid-template-columns: repeat(1, 1fr);
+        /* height: 200px; */
+    }
+    .grid-section .grid-image{
+        /* width: 100%; */
+        height: 200px;
+        background-position: initial;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+
+
+
